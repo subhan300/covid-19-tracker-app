@@ -1,0 +1,57 @@
+* {
+  margin:0;}
+
+.App{display:flex;padding:16px;justify-content: space-evenly;}
+
+.App_header{
+
+  margin:150px ;margin-top:0px;margin-bottom: 0px;
+color:purple;font-size:30px ;text-align:center
+}
+
+
+
+.App_Left{
+  flex:0.9
+
+
+
+}
+.drop{
+  margin-top:160px
+}
+
+
+.App_Right{padding:10px;}
+
+  .infoBoxes{
+    display:flex;justify-content: space-between;
+    text-align:center;
+   
+  }
+
+  @media(max-width:938px){
+    .App{
+      flex-direction: column;
+    };
+    .infoBoxes{
+          
+      flex-direction: column;
+      
+    }
+  }
+
+
+  .Table{overflow:scroll;height:280px;margin:16px
+  }
+
+  .Table tr:nth-of-type(odd){
+    background-color:#f3f2f8
+  }
+
+.card_Info_Boxes{flex:1; color:red!important;margin-top:60px}
+  .card_Info_Boxes:not(:last-child){
+    margin-right:15px
+  }
+
+  .card_Info_Boxes--selected{border-top:12px solid red}
