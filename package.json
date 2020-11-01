@@ -1,8 +1,9 @@
 {
   "name": "corona",
+
   "version": "0.1.0",
   "private": true,
-  "dependencies" : {
+  "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
     "@testing-library/jest-dom": "^4.2.4",
@@ -10,6 +11,7 @@
     "@testing-library/user-event": "^7.1.2",
     "@types/react-leaflet": "^2.5.2",
     "chart.js": "^2.9.3",
+    "gh-pages": "^3.1.0",
     "leaflet": "^1.7.1",
     "numeral": "^2.0.6",
     "react": "^16.13.1",
@@ -19,6 +21,9 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
+
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
